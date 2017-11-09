@@ -16,7 +16,7 @@ docker.
 假设我们应用是www,目录位置在/app/deploy/www.
 对于war文件，docker下的tomcat没自动解压出文件，手动解压后可以使用（unzip tf.war）.
 docker run --privileged=true -v /app/deploy/www:/usr/local/tomcat/webapps/tf  -p 8099:8080 tomcat:9
-
+<br/>
 -------------------------------------------------------------------------------
 docker部署
 1. 192.168.111.178 安装docker,启动systemctl start docker.
@@ -56,7 +56,7 @@ $<imageTags><imageTag>...</imageTag></imageTags>标签
 mvn clean package docker:build -DpushImageTag
 5. 成功上传后，执行docker run -p 80:80 -t threefishes/tf，启动项目
 6. 访问 http://192.168.111.178/find
-
+<br/>
 ---------------------------------------------------------------------------------------------------------------
 docker2
 安装Docker
@@ -65,35 +65,35 @@ yum install docker
 sudo apt-get update
 sudo apt-get install docker-engine
 如果报了以下错误，是因为yum被其它进程使用了
-
+<br/>
 Another app is currently holding the yum lock; waiting for it to exit...
   The other application is: PackageKit
     Memory :  12 M RSS (924 MB VSZ)
     Started: Mon Jan  2 17:22:13 2017 - 1 day(s) 1:06:13 ago
     State  : Sleeping, pid: 16208
-
+<br/>
 查看正在yum使用的进程
 ps -ef|grep yum
 kill掉它即可
-
+<br/>
 kill -9 16208
 安装完成，查看安装是否成功
-
+<br/>
 docker info        #查看docker的情况
 docker --version   #查看docker的版本
 启动Docker服务
 service docker start
 启动Docker的hello-world
-
+<br/>
 从Docker Hub下载一个hello-world镜像
 docker pull hello-world
 运行hello-world镜像
-
+<br/>
 docker run hello-word
 输出以下信息
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
-
+<br/>
 To generate this message, Docker took the following steps:
  1. The Docker client contacted the Docker daemon.
  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
@@ -101,9 +101,9 @@ To generate this message, Docker took the following steps:
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.
-
+<br/>
 至此，我们已成功运行起第一个Docker容器
-
+<br/>
 tomcat运行环境<br/>
 1、搜索Docker Hub里的tomcat镜像<br/>
 docker search tomcat<br/>

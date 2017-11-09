@@ -135,11 +135,10 @@ docker run -p 8081:8080 tomcat:7<br/>
 假设我们应用是www,目录位置在/app/deploy/www<br/>
 docker run --privileged=true -v /app/deploy/www:/usr/local/tomcat/webapps/www  -p 8081:8080 tomcat:7<br/>
 -v /app/deploy/www:/usr/local/tomcat/webapps/www 是把/app/deploy/www的目录挂载至容器的/usr/local/tomcat/webapps/www。<br/>
-–privileged=true是授予docker挂载的权限
-至此，已成功把web应用部署在Docker容器运行
-
-常用命令
-
+–privileged=true是授予docker挂载的权限<br/>
+至此，已成功把web应用部署在Docker容器运行<br/>
+<br/>
+常用命令<br/>
 %%查看所有镜像<br/>
 docker images<br/>
 %%正在运行容器<br/>

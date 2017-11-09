@@ -167,6 +167,4 @@ RabbitMQ
 #systemctl start rabbitmq-server
 允许远程登录及网页登录
 #rabbitmq-plugins enable rabbitmq_management
-网页访问地址
-http://192.168.111.178:15672
-
+网页访问地址:http://192.168.111.178:15672

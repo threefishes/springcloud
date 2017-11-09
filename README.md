@@ -162,14 +162,14 @@ docker run -i -t -p 8081:8080 tomcat:7 /bin/bash<br/>
 -----------------------------------------------------------
 RabbitMQ
 
-添加用户
-%%rabbitmqctl add_user cnrmall cnrmall
-给用户添加权限
-%%rabbitmqctl set_permissions cnrmall ".*" ".*" ".*"
-设置用户为admin标签
-%%Rabbitmqctl set_user_tags cnrmall administrator
-启动rabbitmq服务
-$$systemctl start rabbitmq-server
-允许远程登录及网页登录
-$$rabbitmq-plugins enable rabbitmq_management
-网页访问地址:http://192.168.111.178:15672
+添加用户<br/>
+%%rabbitmqctl add_user cnrmall cnrmall<br/>
+给用户添加权限<br/>
+%%rabbitmqctl set_permissions cnrmall ".*" ".*" ".*"<br/>
+设置用户为admin标签<br/>
+%%Rabbitmqctl set_user_tags cnrmall administrator<br/>
+启动rabbitmq服务<br/>
+$$systemctl start rabbitmq-server<br/>
+允许远程登录及网页登录<br/>
+$$rabbitmq-plugins enable rabbitmq_management<br/>
+网页访问地址:http://192.168.111.178:15672<br/>

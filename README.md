@@ -7,8 +7,8 @@ spring-boot项目构建运行.<br/>
 ------------------------------------------------------------------------------------------------------
 部署到外部tomcat并以war形式，需要将tomcat设置为private，但是由于idea BUG问题，需要在本地运行时，将此注释掉（在 Intellij Idea 15 中使用maven时，所有 scope 为 provided 的依赖都是不会被加入到 classpath 中的，目前该bug尚未被修复(bug report)。如果你的web应用是部署到容器中的，那么这个bug不会影响使用，因为web应用中provided的依赖在容器运行时会被提供。如果你做Spring Boot开发，有带provided的依赖时，直接在IDE中运行项目会导致ClassNotFound异常。<br/>
 解决方案有二：<br/>
-使用spring-boot:run这个 maven goal 运行程序。但这样会失去 Idea 的 debug功能，不推荐。点击IDE右侧的Maven Projects, 找到spring-boot:run，右键选择 debug 运行）.<br/>
-<!--scope>provided</scope--><br/>
+使用spring-boot:run这个 maven goal 运行程序。但这样会失去 Idea 的 debug功能，不推荐。点击IDE右侧的Maven Projects, 找到spring-boot:run，右键选择 debug 运行）<br/>
+<br/>
 其他解决方案参见<br/>
 http://blog.csdn.net/sonycong/article/details/70173354.<br/>
 <br/>
